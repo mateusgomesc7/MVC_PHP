@@ -1,0 +1,31 @@
+ANOTAÇÕES DE ESTUDO:
+
+Para que não precise chamar todas as classes para um arquivo, é utilizado o Composer.
+
+Um gerenciador de arquivos e classes.
+
+No aquivo composer.json:
+
+{
+    "name": "mateus",
+    "description": "Projeto PHP OO",
+    "authors": [
+        {
+            "name": "Mateus Gomes",
+            "email": "mateusgomesc7@gmail.com"
+        }
+    ],
+    "require": {},
+    //Resposável em carregar os arquivos
+    "autoload": { 
+        //Uma lista de recomendações de como irá desenvolver
+        "psr-4": {
+            // Criando um apelido
+            // Sts está relacionado ao caminho do site
+            "Sts\\":"app/sts",
+            // Como foi criado a pasta Core
+            // Devesse fazer o caminho aqui no Composer
+            "Core\\":"core"
+        }
+    }
+}
